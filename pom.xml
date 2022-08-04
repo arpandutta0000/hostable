@@ -6,6 +6,25 @@
   <artifactId>hostable</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
+	
+	<distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>Github arpandutta0000 apache maven packages</name>
+         <url>https://maven.pkg.github.com/arpandutta0000/hostable</url>
+	   </repository>
+	</distributionManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
 
   <name>hostable</name>
   <url>http://maven.apache.org</url>
